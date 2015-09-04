@@ -30,5 +30,9 @@ h3 {
 }
 
 body {
-    background-image: url("http://thumbs.dreamstime.com/z/cinema-snacks-cornet-popcorn-drink-black-paper-cup-straw-chalkboard-background-39987383.jpg");
+    /*background-image: url("http://thumbs.dreamstime.com/z/cinema-snacks-cornet-popcorn-drink-black-paper-cup-straw-chalkboard-background-39987383.jpg");*/
+}
+
+form {
+	display: none;
 }
