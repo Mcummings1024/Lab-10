@@ -1,0 +1,22 @@
+h1{ text-align: center;}
+h3{ text-align: center;}
+
+
+
+
+.col-lg-2{
+	border-style: solid;
+    border-width: medium;
+    height: 100px;
+    border-color: #ff0000 #0000ff;
+}
+
+
+ .instructions
+ {
+ 	text-align: center
+ }
+
+ body {
+    background-image: url("http://thumbs.dreamstime.com/z/cinema-snacks-cornet-popcorn-drink-black-paper-cup-straw-chalkboard-background-39987383.jpg");
+}
