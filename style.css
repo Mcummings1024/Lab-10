@@ -6,11 +6,23 @@ h3 {
 	text-align: center;
 }
 
-.col-lg-2 {
+.col-lg-2, .col-md-2, .col-sm-2 {
     border-style: solid;
     border-width: medium;
     height: 100px;
     border-color: #ff0000 #0000ff;
+}
+
+.selected {
+	border: 5px solid green;
+}
+
+.taken {
+	border: 5px solid red;
+}
+
+.reserved {
+	border: 5px solid blue;
 }
 
 .instructions {
