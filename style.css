@@ -11,31 +11,45 @@ h1, h3, .instructions {
 }
 
 .selected {
-	border: 5px solid green;
+	background-color: green;
 }
 
 .taken {
-	border: 5px solid red;
+	background-color: red;
 }
 
 .reserved {
-	border: 5px solid blue;
+	background-color: blue;
 }
 
 .container {
+	background-color: rgba(204, 204, 204, 0.2);
+	color: white;
 	padding: 20px;
+	text-shadow: 0 0 5px black;
+	height: 100%;
 }
 
-section p {
-	margin-left: 20px;
+.row {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section p, h4 {
+	background-color: green;
 }
 
 body {
-    /*background-image: url("http://thumbs.dreamstime.com/z/cinema-snacks-cornet-popcorn-drink-black-paper-cup-straw-chalkboard-background-39987383.jpg");*/
+	background-color: black;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 form {
-	background-color: purple;
+	background-color: #CCC;
+	color: black;
+	text-shadow: none;
 	margin-left: 50px;
 	margin-right: 50px;
 	padding: 10px;
