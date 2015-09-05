@@ -10,52 +10,52 @@
 	<h3>We're happy to see you!</h3>
 	<p><a href="http://Disney Film Website"></a></p>
 	<h1 class="text-center">Now Showing: Beauty and the Beast</h1>
-	<div>
-	<section id="instructions">Seating Instructions:</section>
-	  <p seating instructions> Please select one available seat.</p>
-	  <p> Seats highlighted in green are available. Seats selected in red are not available.</p>
-  	<div class="container">
-	  <div class="row">
-  	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
+	<section id="instructions">
+	  <h4>Seating Instructions:</h4>
+	  <p> Please select one available seat. Seats highlighted in green are available. Seats selected in red are not available.</p>
+	</section>
+  	<section class="container">
+	  <section class="row">
+  	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="taken col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="taken col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	  </section>
+ 	  <div class="row">
+  	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="taken col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
  	  </div>
  	  <div class="row">
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
-        <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
+  	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="taken col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
  	  </div>
  	  <div class="row">
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
- 	    <div class="col-lg-2 col-md-2 col-sm-2"></div>
-        <div class="col-lg-2"></div>
+  	    <div class="taken col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+ 	    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
  	  </div>
- 	  <div class="row">
- 	    <div class="col-lg-2"></div>
- 	    <div class="col-lg-2"></div>
-        <div class="col-lg-2"></div>
- 	    <div class="col-lg-2"></div>
- 	    <div class="col-lg-2"></div>
- 	    <div class="col-lg-2"></div>
- 	  </div>
-    </div>
+    </section>
 
-	<form action="demo_form.asp">
-  	  Edit Address: <input type="text" <input type="submit" value="Submit">
+	<form id="form">Name: <input type="text" name="name" placeholder="Name">E-mail Address: <input type="text" name="email" placeholder="E-mail address">
 	  <p>Would you recommend our theatre to friends?</p>
 	  <span> Yes</span><input type="radio" name="tier">
 	  <span> No</span><input type="radio" name="tier">
 	  <span> Maybe</span><input type="radio" name="tier">
-	  <label for="f"></label>
+	  <button id="submit">Submit</button>
 	</form>
+	<script src="script.js"></script>
   </body>
 </html>

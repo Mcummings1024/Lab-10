@@ -2,11 +2,11 @@
 var submit = document.getElementById("submit");
 submit.addEventListener('click', reserveSeat, false);
 
-var form = document.getElementsByTagName("form");
+var form = document.getElementById("form");
 
-var seats = document.getElementsByClassName("col-lg-2");
+var seats = document.getElementsByClassName("col-lg-2 col-md-2 col-sm-2 col-xs-2");
 
-for(var i = 0; i < seats.length-1; i++) {
+for(var i = 0; i < seats.length; i++) {
 	seats[i].addEventListener('click', activateForm, false);
 }
 
@@ -15,7 +15,7 @@ function activateForm(e) {
 		alert("This seat is taken, please select another.");
 	}
 	else {
-		form[0].style.display = 'block';
+		form.style.display = 'block';
 		highlightSeat(e);
 	}
 }
@@ -36,14 +36,14 @@ function highlightSeat(e) {
 function deselectSeats() {
 	for(var i = 0; i < seats.length-1; i++) {
 		if(!(seats[i].className.includes("taken"))) {
-			seats[i].className = "col-lg-2 col-md-2 col-sm-2";
+			seats[i].className = "col-lg-2 col-md-2 col-sm-2 col-xs-2";
 		}
 	}
 }
 
 function reserveSeat() {
 	var index = findSelectedSeat();
-	seats[index].className = "col-lg-2 col-md-2 col-sm-2";
+	seats[index].className = "col-lg-2 col-md-2 col-sm-2 col-xs-2";
 	seats[index].className += " reserved";
 	var seatnum = index +1;
 	alert("Seat " + seatnum + " is reserved for you. Enjoy the show!");
