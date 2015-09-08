@@ -2,6 +2,15 @@ h1, h3, .instructions {
 	text-align: center;
 }
 
+.movieposter {
+	background-color:fff;
+	opacity: 0.9;
+	border-width: 3px;
+	border-color:white;
+	border-radius: 25px;
+	margin:25px;
+
+}
 .col-lg-2, .col-md-2, .col-sm-2, .col-xs-2 {
     border-style: solid;
     border-width: medium;
@@ -28,7 +37,7 @@ h1, h3, .instructions {
 }
 
 .taken {
-	background-color: red;
+	background-color: yellow;
 }
 
 .reserved {
@@ -37,9 +46,8 @@ h1, h3, .instructions {
 
 .container {
 	background-color: rgba(204, 204, 204, 0.2);
-	color: white;
+	color: black;
 	padding: 20px;
-	text-shadow: 0 0 5px black;
 	height: 100%;
 }
 
@@ -49,12 +57,12 @@ h1, h3, .instructions {
 }
 
 section p, h4 {
-	background-color: green;
+	background-color: white;
 }
 
 body {
 	background-color: black;
-    background-image: url(background.png);
+    background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -67,4 +75,13 @@ form {
 	margin-right: 50px;
 	padding: 10px;
 	display: none;
+}
+#instructions {
+	background-color:white;
+	border-style: double;
+	border-width:3px;
+	border-color: white;
+	border-radius:25px;
+	padding: 10px;
+	margin:10px;
 }
