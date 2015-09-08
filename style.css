@@ -12,6 +12,17 @@ h1, h3, .instructions {
     background-color: #ff0000 #0000ff;
 }
 
+.col-lg-2:hover, .col-md-2:hover, .col-sm-2:hover, .col-xs-2:hover {
+    border-style: solid;
+    border-width: medium;
+    height: 100px;
+    border-color: black;
+    text-align: center;
+    font-size: 2em;
+    background-color: #ff0000 #0000ff;
+    opacity:0.5;
+}
+
 .selected {
 	background-color: green;
 }

@@ -21,7 +21,7 @@ function activateForm(e) {
 }
 
 function findSelectedSeat() {
-	for(var i=0; i < seats.length-1; i++) {
+	for(var i=0; i < seats.length; i++) {
 		if(seats[i].className.includes("selected")) {
 			return i;
 		}	
@@ -34,7 +34,7 @@ function highlightSeat(e) {
 }
 
 function deselectSeats() {
-	for(var i = 0; i < seats.length-1; i++) {
+	for(var i = 0; i < seats.length; i++) {
 		if(!(seats[i].className.includes("taken"))) {
 			seats[i].className = "col-lg-2 col-md-2 col-sm-2 col-xs-2";
 		}
@@ -42,7 +42,19 @@ function deselectSeats() {
 }
 
 function reserveSeat(e) {
-	e.preventDefault();
+	//this checks that both an email and a name have been entered and returns an alert if not
+	var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    e.preventDefault();
+    if(name === "") {
+        alert("Please enter a valid name.");
+        return;
+    }
+    else if(email === "") {
+        alert("Please enter an email address in the format of name@email.com.");
+        return;
+    }
+
 	var index = findSelectedSeat();
 	seats[index].className = "col-lg-2 col-md-2 col-sm-2 col-xs-2";
 	seats[index].className += " reserved";
