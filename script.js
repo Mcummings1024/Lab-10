@@ -41,7 +41,8 @@ function deselectSeats() {
 	}
 }
 
-function reserveSeat() {
+function reserveSeat(e) {
+	e.preventDefault();
 	var index = findSelectedSeat();
 	seats[index].className = "col-lg-2 col-md-2 col-sm-2 col-xs-2";
 	seats[index].className += " reserved";
